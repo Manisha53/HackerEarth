@@ -1,3 +1,5 @@
+
+
 //solution 1:but time limit exceeded.
 
 import java.util.*;
@@ -31,7 +33,7 @@ class TestClass {
     }
 }
 
-//soltuion 2:optimised
+//soltuion 2:optimised with O(1) complexity.
 
 import java.util.*;
 
@@ -47,7 +49,7 @@ class TestClass {
             long a=s.nextLong();
             long b=s.nextLong();
             
-            long i=(b*n)/(a+b);
+            long i=(b*n)/(a+b);      // by differentiation of f(i)=a(i*i)+b(n-i)(n-i) wrt i. 
             min=a*(i*i)+b*(n-i)*(n-i);
             i++;
             sum=a*(i*i)+b*(n-i)*(n-i);
