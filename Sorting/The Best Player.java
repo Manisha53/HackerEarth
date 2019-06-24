@@ -63,7 +63,7 @@ class TestClass {
         String temp1;
         boolean swapped=false;
         for(int i=0;i<q.length-1;i++){
-            for(int j=0;j<name.length-i-1;j++){
+            for(int j=0;j<name.length-i-1;j++){            //name.length=q.length ,so any of them can be used
                 if(q[j]<q[j+1]){
                     temp2=q[j];
                     q[j]=q[j+1];
