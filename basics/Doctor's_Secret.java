@@ -6,7 +6,7 @@ class TestClass {
         Scanner in=new Scanner(System.in);
         int l=in.nextInt();
         int n=in.nextInt();
-        if( l<=23 && 500<n && n<1000){
+        if( l<=23 && 500<n && n<=1000){
             System.out.println("Take Medicine");
         }
         else{
